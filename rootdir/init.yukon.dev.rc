@@ -16,3 +16,10 @@ service btnvtool /system/bin/btnvtool -I
     user root
     group root
     oneshot
+
+# flamingo's apps_log partition is unformatted, but we need it as ext4
+service setup_fs /system/bin/setup_fs /dev/block/platform/msm_sdcc.1/by-name/apps_log
+    class core
+    user root
+    group root
+    oneshot
