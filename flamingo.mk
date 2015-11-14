@@ -21,8 +21,8 @@ PRODUCT_NAME := flamingo
 PRODUCT_DEVICE := flamingo
 PRODUCT_MODEL := Xperia E3 (B2G)
 
-GAIA_DEV_PIXELS_PER_PX := 2.0
-BOOTANIMATION_ASSET_SIZE := 720p
+GAIA_DEV_PIXELS_PER_PX := 2
+BOOTANIMATION_ASSET_SIZE := fwvga
 
 PRODUCT_COPY_FILES += \
     device/sony/flamingo/bootrec-device:root/sbin/bootrec-device
