@@ -21,4 +21,7 @@ PRODUCT_NAME := flamingo
 PRODUCT_DEVICE := flamingo
 PRODUCT_MODEL := Xperia E3 (B2G)
 
+PRODUCT_COPY_FILES += \
+    device/sony/flamingo/bootrec-device:root/sbin/bootrec-device
+
 $(call inherit-product-if-exists, vendor/sony/flamingo-blobs/flamingo-vendor-blobs.mk)
