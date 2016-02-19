@@ -14,6 +14,9 @@
 
 $(call inherit-product, device/sony/flamingo/aosp_d2203.mk)
 
+PRODUCT_PACKAGES += \
+    setup_fs
+
 GAIA_DEV_PIXELS_PER_PX := 1.5
 BOOTANIMATION_ASSET_SIZE := fwvga
 
