@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/yukon/BoardConfig.mk
+include device/sony/yukon/PlatformConfig.mk
 
-TARGET_RECOVERY_FSTAB = device/sony/flamingo/rootdir/fstab.yukon
+TARGET_RECOVERY_FSTAB = device/sony/flamingo/rootdir/fstab.flamingo
 
 TARGET_BOOTLOADER_BOARD_NAME := D2203
 
@@ -22,5 +22,5 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 1782579200
 #Reserve space for data encryption (1879030784-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1879014400
 
-#BOARD_KERNEL_CMDLINE += mem=128M@0 mem=755M@255M
+BOARD_KERNEL_CMDLINE += androidboot.hardware=flamingo
 BOARD_KERNEL_CMDLINE += mem=1003M
