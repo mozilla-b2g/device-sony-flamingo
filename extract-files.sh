@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE=flamingo
+DEVICE=tianchi
 MANUFACTURER=sony
-STOCK=18.4.C.2.12
+STOCK=18.5.C.0.25
 
-. ../yukon/extract-files.sh
+. ../common/extract-files.sh
 
 COMMON_FIRMWARE="
 	modem.b00

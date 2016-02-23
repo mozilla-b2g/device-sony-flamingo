@@ -17,12 +17,12 @@ $(call inherit-product, device/sony/flamingo/aosp_d2203.mk)
 PRODUCT_PACKAGES += \
     setup_fs
 
+GAIA_DEV_PIXELS_PER_PX := 1.5
+BOOTANIMATION_ASSET_SIZE := fwvga
+
 PRODUCT_NAME := flamingo
 PRODUCT_DEVICE := flamingo
 PRODUCT_MODEL := Xperia E3 (B2G)
-
-GAIA_DEV_PIXELS_PER_PX := 2
-BOOTANIMATION_ASSET_SIZE := fwvga
 
 PRODUCT_COPY_FILES += \
     device/sony/flamingo/bootrec-device:root/sbin/bootrec-device
