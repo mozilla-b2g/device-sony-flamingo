@@ -19,7 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES := \
     device/sony/flamingo/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/flamingo/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
-    device/sony/flamingo/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+    device/sony/flamingo/rootdir/system/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     device/sony/flamingo/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/flamingo/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
@@ -62,17 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=240 \
     ro.usb.pid_suffix=1BC
 
-# Disable invalid sensors
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.sensors.cmc=false \
-    ro.qualcomm.sensors.georv=false \
-    ro.qualcomm.sensors.pam=false \
-    ro.qualcomm.sensors.pedometer=false \
-    ro.qualcomm.sensors.qmd=false \
-    ro.qualcomm.sensors.scrn_ortn=false \
-    ro.qualcomm.sensors.smd=false \
-    ro.qc.sdk.sensors.gestures=false
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/yukon/platform.mk)
-$(call inherit-product-if-exists, vendor/sony/flamingo/flamingo-vendor.mk)
+$(call inherit-product-if-exists, vendor/sony/yukon-flamingo/flamingo-vendor.mk)
