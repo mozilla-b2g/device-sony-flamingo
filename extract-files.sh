@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE=tianchi
+DEVICE=flamingo
 MANUFACTURER=sony
 STOCK=18.5.C.0.25
 
